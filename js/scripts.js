@@ -7,41 +7,34 @@ $(document).ready(function() {
     event.preventDefault();
   });
   $("form#codeform").submit(function(event) {
-    var id = $("input#id").val();
+    var id = parseInt($("input#id").val());
     var dob = $("input#dob").val();
-    var num0 = $("input#num0").val();
-    var results = logic(id,dob,num0);
+    var num0 = parseInt($("input#num0").val());
+    var num1 = parseInt($("input#num1").val());
+    var num2 = parseInt($("input#num2").val());
+    var num3 = parseInt($("input#num3").val());
 
-    $(".id").text(id);
+
+    var results = logic(id,dob,num0,num1,num2,num3);
+    console.log(results);
+
+
+    $(".language").text(languages[results]);
 
     event.preventDefault();
   });
 });
-function logic(id, dob, num0, num1, num2) {
+function logic(id, dob, num0, num1, num2, num3) {
   var points = [0,0,0,0,0,0]; // point value toward each language
-  if (Math.cos(num2) > Math.cos(num1)) {
-    points[4] += 1;
-    points[5] -= 4;
-  } else {
-    points[0] += 2;
-    points[1] += 3;
-  }
-  if (dob > Date.now()) {
-    points[1] += 100;
-    points[5] -= 100;
-  } else {
-    points[0] += 1;
-  }
-  if (Math.tan(id) < Math.tan(num0)) {
-    points[3] += 2;
-    points[2]+= 2;
-  } else {
-    points[2] += 4;
-    points[1] +=5
-  }
-  for (i=0;i<6;i++) {
-    console.log(points[i]);
-  }
+  points[0] = num2 + num3;
+  points[1] = num2 + num1;
+  points[2] = num1 + num3;
+  points[3] = num0 + num1;
+  points[4] = num0 + num2;
+  points[5] = num0 + num3;
+  console.log(points[2]);
+  return (Math.floor(points[(id%6)]%6));
+  console.log(dob); // We don't use the date of birth, so I console log it so it does not feel unwanted.
 }
 function resolve(num) {
   var returnMe = eval(num);

@@ -17,7 +17,7 @@ $(document).ready(function() {
     var results = logic(id,dob,num0,num1,num2,num3);
     console.log(results);
 
-
+    $(".para").hide();
     $(".language").text(languages[results]);
     $(".para#title").show();
     $(".para#"+languages[results]).show();

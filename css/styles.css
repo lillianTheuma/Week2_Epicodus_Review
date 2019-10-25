@@ -1,9 +1,13 @@
-#claculator {
+#claculator , .card-header {
   text-align: center;
 }
 .para {
   display: none;
 }
 .nav-link {
-  text-decoration: none;
+  user-select: none;
+}
+form button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

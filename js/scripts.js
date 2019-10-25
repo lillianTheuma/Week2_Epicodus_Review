@@ -19,8 +19,8 @@ $(document).ready(function() {
 
     $(".para").hide();
     $(".language").text(languages[results]);
-    $(".para#title").show();
-    $(".para#"+languages[results]).show();
+    $(".para#title").fadeIn();
+    $(".para#"+languages[results]).fadeIn();
 
     event.preventDefault();
   });

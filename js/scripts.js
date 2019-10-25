@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var languages = ["Ruby","C#","Javascript","Go, like the game not the language","Python"];
+  var languages = ["Ruby","C#","Javascript","Go","Python"];
   $("#calc").submit(function(event) {
     var input = $("input#string").val();
     console.log(input);
@@ -14,12 +14,13 @@ $(document).ready(function() {
     var num2 = parseInt($("input#num2").val());
     var num3 = parseInt($("input#num3").val());
 
-
     var results = logic(id,dob,num0,num1,num2,num3);
     console.log(results);
 
 
     $(".language").text(languages[results]);
+    $(".para#title").show();
+    $(".para#"+languages[results]).show();
 
     event.preventDefault();
   });

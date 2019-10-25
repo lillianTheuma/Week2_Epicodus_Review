@@ -19,10 +19,28 @@ $(document).ready(function() {
 });
 function logic(id, dob, num0, num1, num2) {
   var points = [0,0,0,0,0,0]; // point value toward each language
-  var returns[];
-  if (Math.cos(num0) > Math.cos(num1)) {
-    points[4] += 3;
-    points[6] -= 4;
+  if (Math.cos(num2) > Math.cos(num1)) {
+    points[4] += 1;
+    points[5] -= 4;
+  } else {
+    points[0] += 2;
+    points[1] += 3;
+  }
+  if (dob > Date.now()) {
+    points[1] += 100;
+    points[5] -= 100;
+  } else {
+    points[0] += 1;
+  }
+  if (Math.tan(id) < Math.tan(num0)) {
+    points[3] += 2;
+    points[2]+= 2;
+  } else {
+    points[2] += 4;
+    points[1] +=5
+  }
+  for (i=0;i<6;i++) {
+    console.log(points[i]);
   }
 }
 function resolve(num) {

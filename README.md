@@ -2,7 +2,7 @@
 This portfolio is presented as a solution to the project guidelines described in (https://epicenter.epicodus.com/courses/458/code_reviews/1927). It is a static webpage, with a dark and light mode, that has information. It is presented as a portfolio of work done by myself, Lillian Theuma.
 
 ## GITHUB Repository
-* This project can be found at https://github.com/lillianTheuma/Portfolio
+* This project can be found at https://github.com/lillianTheuma/Week2_Epicodus_Review
 
 ## Requirements
 * A FTP server
@@ -31,7 +31,7 @@ If using on an FTP, direct users to (./project-2/index.html)
 * Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
 * Many elements herein were possible thanks to the extensive documetation and information for the Bootstrap project.
 
-#License
+# License
 * This repository is offered under the MIT license
 @ Lillian Theuma 2019
 See LICENSE file for additional details regarding license.

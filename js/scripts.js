@@ -1,7 +1,10 @@
 $(document).ready(function() {
-  $("input.form-control").oninput= function() {
-    console.log("Success");
-  }
+  $("#calc").submit(function(event) {
+    var input = $("input#string").val();
+    console.log(input);
+    write(resolve(input));
+    event.preventDefault();
+  });
   $("form#codeform").submit(function(event) {
     var id = $("input#id").val();
 
@@ -9,8 +12,15 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
-
-  function reset(){
-    // Resets the response, lets you answer again
-  }
 });
+function resolve(num) {
+  var returnMe = eval(num);
+  return returnMe;
+}
+function write(num) {
+  console.log(num);
+  $("h3#s").text(num);
+}
+function reset(){
+  // Resets the response, lets you answer again
+}

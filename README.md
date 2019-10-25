@@ -28,8 +28,7 @@ OR
 If using on an FTP, direct users to (./project-2/index.html)
 
 # Credits
-* Inspiration for readme design from ( https://github.com/1adog1/eve-watchman )
-* Many elements herein were possible thanks to the extensive documetation and information for the Bootstrap project.
+* Many elements herein were possible thanks to the extensive documetation and information for the Bootstrap project and JQuery libraries.
 
 # License
 * This repository is offered under the MIT license

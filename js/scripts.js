@@ -33,9 +33,9 @@ function logic(id, dob, num0, num1, num2, num3) {
   points[3] = num0 + num1;
   points[4] = num0 + num2;
   points[5] = num0 + num3;
-  console.log(points[2]);
+
   return (Math.floor(points[(id%6)]%6));
-  console.log(dob); // We don't use the date of birth, so I console log it so it does not feel unwanted.
+  console.log(dob); // We don't use the date of birth because I'm bad at using Epoch times, so I put a line that does not run to say I'm going to console log it so it does not feel unwanted.
 }
 function resolve(num) {
   var returnMe = eval(num);
@@ -47,4 +47,17 @@ function write(num) {
 }
 function reset(){
   // Resets the response, lets you answer again
+}
+function dark() {
+  console.log("success");
+  $('.container').toggleClass ="bg-dark text-light";
+  $('#navbar').toggleClass = "bg-info text-dark";
+  $('.jumbotron').toggleClass = 'bg-secondary text-dark';
+  $('.card-header').toggleClass = 'bg-info text-dark';
+  $('.card-body').toggleClass = 'bg-secondary';
+  $('.card').toggleClass = 'bg-secondary';
+  $('.card-footer').toggleClass = 'bg-info text-dark';
+}
+function light() {
+
 }

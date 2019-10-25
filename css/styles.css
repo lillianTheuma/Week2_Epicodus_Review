@@ -4,3 +4,6 @@
 .para {
   display: none;
 }
+.nav-link {
+  text-decoration: none;
+}

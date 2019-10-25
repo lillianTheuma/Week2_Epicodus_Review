@@ -50,13 +50,17 @@ function reset(){
 }
 function dark() {
   console.log("success");
-  $('.container').toggleClass ="bg-dark text-light";
-  $('#navbar').toggleClass = "bg-info text-dark";
-  $('.jumbotron').toggleClass = 'bg-secondary text-dark';
-  $('.card-header').toggleClass = 'bg-info text-dark';
-  $('.card-body').toggleClass = 'bg-secondary';
-  $('.card').toggleClass = 'bg-secondary';
-  $('.card-footer').toggleClass = 'bg-info text-dark';
+  $('.container').toggleClass("bg-dark");
+  $('.navbar').toggleClass("navbar-light bg-light bg-secondary");
+  $('.card.jumbotron').toggleClass('');
+  $('.card-header').toggleClass('bg-info');
+  $('.card-body').toggleClass('bg-secondary');
+  $('.card').toggleClass('bg-secondary');
+  $('.card-footer').toggleClass('bg-info');
+  $('.input').toggleClass('bg-info');
+  $('body').toggleClass('bg-dark text-light');
+  $('button').toggleClass('bg-info');
+  $('a').toggleClass('text-light');
 }
 function light() {
 
